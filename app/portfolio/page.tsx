@@ -6,13 +6,10 @@ import { Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { MobileNav } from "@/components/mobile-nav";
-import { ScrollToTop } from "@/components/scroll-to-top";
 
 const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+  initial: { opacity: 0, y: 60, transition: { duration: 0.6 } },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const staggerContainer = {

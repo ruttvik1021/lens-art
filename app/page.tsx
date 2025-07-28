@@ -20,16 +20,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import { useState } from "react";
-import { SmoothScrollHandler } from "@/components/smooth-scroll";
-import { MobileNav } from "@/components/mobile-nav";
-import { ScrollToTop } from "@/components/scroll-to-top";
-import { useRouter } from "next/navigation";
-import { smoothScrollTo } from "./layout";
 
 const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+  initial: { opacity: 0, y: 60, transition: { duration: 0.6 } },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const staggerContainer = {
