@@ -24,3 +24,10 @@ export const smoothScrollTo = (elementId: string) => {
     });
   }
 };
+
+export enum PortfolioCategory {
+  Weddings = "weddings",
+  Portraits = "portraits",
+  Family = "family",
+  Events = "events",
+}
