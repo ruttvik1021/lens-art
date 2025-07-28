@@ -1,14 +1,13 @@
 "use client";
 
+import { MobileNav } from "@/components/mobile-nav";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { SmoothScrollHandler } from "@/components/smooth-scroll";
 import { motion } from "framer-motion";
 import { Camera } from "lucide-react";
-import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import { MobileNav } from "@/components/mobile-nav";
 import { useRouter } from "next/navigation";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
